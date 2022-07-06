@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
+    <header>
+      <div class="container">
         <nav>
           <a href="" class="logo">
             <span class="logo-first">Web</span
@@ -29,7 +29,8 @@
             <li><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
-
+      </div>
+      <div class="container">
         <ul class="contacts-list list">
           <li>
             <a href="mailto:info@devstudio.com" class="link"
@@ -40,17 +41,18 @@
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
-      </header>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <button type="button" class="button button-main">
+          Заказать услугу
+        </button>
+      </section>
 
-      <main>
-        <section class="hero">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button button-main">
-            Заказать услугу
-          </button>
-        </section>
-
-        <section class="features">
+      <section class="section">
+        <div class="container">
           <h2 class="features-title">Наши принципы</h2>
           <ul class="features-list list">
             <li>
@@ -82,9 +84,11 @@
               </p>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="works">
+      <section class="section">
+        <div class="container">
           <h2 class="works-title">Чем мы занимаемся</h2>
           <ul class="works-list list">
             <li>
@@ -105,36 +109,48 @@
               <img src="images/img3.jpg" alt="Дизайн" width="370" />
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="team">
+      <section class="section team">
+        <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li>
-              <img src="images/img4.jpg" alt="Игорь Демьяненко" width="270" />
-              <h3 class="title">Игорь Демьяненко</h3>
-              <p class="description">Product Designer</p>
+              <div class="teamcard">
+                <img src="images/img4.jpg" alt="Игорь Демьяненко" width="270" />
+                <h3 class="title">Игорь Демьяненко</h3>
+                <p class="description">Product Designer</p>
+              </div>
             </li>
             <li>
-              <img src="images/img5.jpg" alt="Ольга Репина" width="270" />
-              <h3 class="title">Ольга Репина</h3>
-              <p class="description">Frontend Developer</p>
+              <div class="teamcard">
+                <img src="images/img5.jpg" alt="Ольга Репина" width="270" />
+                <h3 class="title">Ольга Репина</h3>
+                <p class="description">Frontend Developer</p>
+              </div>
             </li>
             <li>
-              <img src="images/img6.jpg" alt="Николай Тарасов" width="270" />
-              <h3 class="title">Николай Тарасов</h3>
-              <p class="description">Marketing</p>
+              <div class="teamcard">
+                <img src="images/img6.jpg" alt="Николай Тарасов" width="270" />
+                <h3 class="title">Николай Тарасов</h3>
+                <p class="description">Marketing</p>
+              </div>
             </li>
             <li>
-              <img src="images/img7.jpg" alt="Михаил Ермаков" width="270" />
-              <h3 class="title">Михаил Ермаков</h3>
-              <p class="description">UI Designer</p>
+              <div class="teamcard">
+                <img src="images/img7.jpg" alt="Михаил Ермаков" width="270" />
+                <h3 class="title">Михаил Ермаков</h3>
+                <p class="description">UI Designer</p>
+              </div>
             </li>
           </ul>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <footer class="footer">
+    <footer class="footer">
+      <div class="container">
         <a href="" class="logo">
           <span class="logo-first">Web</span
           ><span class="logo-footer">Studio</span>
@@ -153,7 +169,7 @@
             </li>
           </ul>
         </address>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

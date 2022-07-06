@@ -30,12 +30,15 @@ body {
 
 .container {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
 .logo {
   text-decoration: none;
 }
+
 .logo-first {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -75,6 +78,8 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .site-nav .link:hover,
@@ -101,24 +106,41 @@ body {
 
 /* hero */
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .hero {
   background-color: var(--background-hero-footer);
+  text-align: center;
+  margin-bottom: 94px;
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--white-color);
 }
 
-.features-title,
+.features-title {
+  color: transparent;
+}
+
 .works-title,
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -140,18 +162,29 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  margin-bottom: 30px;
 }
 
-.team {
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.team {
   background-color: var(--button-background);
 }
 
 .team-list .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--title-text-color);
 }
 
@@ -160,6 +193,14 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.teamcard {
+  background-color: var(--white-color);
+  margin-bottom: 30px;
+  max-width: 270px;
+
+  padding: 0 0 30px 0;
 }
 
 .projects-title {
@@ -191,9 +232,11 @@ body {
 }
 
 .button-main {
-  display: inline-block;
   padding: 10px 32px;
   border-radius: 4px;
+  border: 0;
+  min-width: 200px;
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -211,6 +254,8 @@ body {
   display: inline-block;
   padding: 6px 22px;
   border-radius: 4px;
+  border: 0;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -227,6 +272,8 @@ body {
 
 .footer {
   background-color: var(--background-hero-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .address {
