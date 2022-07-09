@@ -166,14 +166,17 @@ p {
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 94px;
-
+  padding-bottom: 200px;
+  padding-top: 200px;
   background-color: var(--background-hero-footer);
 }
 
 .hero-title {
   margin-bottom: 30px;
+  max-width: 700px;
 
   font-style: normal;
   font-weight: 900;
@@ -244,9 +247,8 @@ p {
 }
 
 .section.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 94px;
+  padding-top: 0px;
+  padding-bottom: 94px;
 }
 
 .section.team {
@@ -264,7 +266,6 @@ p {
 
 .team-list .title {
   margin-bottom: 10px;
-  margin-top: 30px;
 
   font-weight: 500;
   font-size: 16px;
@@ -282,11 +283,17 @@ p {
   letter-spacing: 0.03em;
 }
 
-.teamcard {
-  max-width: 270px;
-  padding-bottom: 30px;
+.team-list .item {
+  width: 270px;
 
   background-color: var(--white-color);
+}
+
+.teamcard {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .projects-title {
@@ -410,7 +417,6 @@ p {
 
 .address {
   margin-top: 20px;
-  margin-bottom: 9px;
 
   font-style: normal;
   font-size: 14px;
@@ -428,8 +434,8 @@ p {
   text-decoration: none;
 }
 
-.footer-list > .item:not(:last-child) {
-  margin-bottom: 6px;
+.footer-list > .item {
+  margin-top: 9px;
 }
 
 .footer-list .link:hover,
